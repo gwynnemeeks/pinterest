@@ -1,0 +1,11 @@
+{
+    "firebaseConfig" : {
+    "apiKey" : "AIzaSyDTrf26ZmdGS6x_vCoc-GkNlA-LwTMJ8us",
+    "authDomain" : "gwynterist.firebaseapp.com",
+    "databaseURL": "https://gwynterist.firebaseio.com",
+    "projectId" : "gwynterist",
+    "storageBucket" : "gwynterist.appspot.com",
+    "messagingSenderId" : "975357444424",
+    "appId" : "1:975357444424:web:d9cf945e65f3deb8ddf37d"
+  }
+}
