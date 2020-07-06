@@ -1,5 +1,6 @@
 import pinComponent from '../pins/pins';
 import pinData from '../../helpers/data/pinData';
+import singleBoard from '../pinsOnBoard/pinsOnBoard';
 import utils from '../../helpers/utils';
 
 const buildPins = () => {
@@ -17,7 +18,9 @@ const buildPins = () => {
 
       domString += '</div>';
 
-      utils.printToDom('#pins', domString);
+      utils.printToDom('#pinsOnBoard', domString);
+
+      $('body').on('click', '.pin-card', singleBoard.buildPinsOnBoard);
     })
     .catch((err) => console.error('get pins has failed', err));
 };
