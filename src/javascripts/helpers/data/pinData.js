@@ -8,9 +8,9 @@ const getPins = () => new Promise((resolve, reject) => {
     .then((response) => {
       const pinsObjects = response.data;
       const pins = [];
-      Object.keys(pinsObjects).forEach((pinId) => {
-        pinsObjects[pinId].id = pinId;
-        pins.push(pinsObjects[pinId]);
+      Object.keys(pinsObjects).forEach((boardId) => {
+        pinsObjects[boardId].id = boardId;
+        pins.push(pinsObjects[boardId]);
       });
       resolve(pins);
     })
