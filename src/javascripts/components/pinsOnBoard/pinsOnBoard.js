@@ -2,7 +2,8 @@ import pinData from '../../helpers/data/pinData';
 import utils from '../../helpers/utils';
 
 const buildPinsOnBoard = (e) => {
-  const boardId = e.target.closest('.card').id;
+  const boardId = e.target.closest('.board-card').id;
+  console.error('am I getting it', boardId);
   pinData.getPins(boardId)
     .then((response) => {
       const pins = response.data;

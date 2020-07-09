@@ -17,6 +17,4 @@ const getPins = () => new Promise((resolve, reject) => {
     .catch((err) => reject(err));
 });
 
-const getPinsByBoardId = (boardId) => axios.get(`${baseUrl}/pins/${boardId}.json`);
-
-export default { getPins, getPinsByBoardId };
+export default { getPins };
