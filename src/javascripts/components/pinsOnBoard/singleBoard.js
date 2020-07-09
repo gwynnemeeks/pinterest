@@ -9,7 +9,7 @@ const buildSingleBoard = (e) => {
     .then((response) => {
       const boards = response.data;
 
-      boardPinData.getPinsFromBoardUid(boards.uid)
+      boardPinData.getPinsFromBoardUid(boards)
         .then((res) => console.warn('getpinsbyboard worked!', res))
         .catch((err) => console.error('problem in getpinsbyboard', err));
 
