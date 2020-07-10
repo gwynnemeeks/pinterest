@@ -5,9 +5,9 @@ import apiKeys from './apiKeys.json';
 // return as an array of objects, not an object of objects
 
 const baseUrl = apiKeys.firebaseConfig.databaseURL;
-
-const getPinsFromBoardUid = (boardUid) => new Promise((resolve, reject) => {
-  axios.get(`${baseUrl}/pins.json?orderBy="boardId"&equalTo="${boardUid}"`)
+// move to pinData
+const getPinsFromBoardUid = (pins) => new Promise((resolve, reject) => {
+  axios.get(`${baseUrl}/pins.json?orderBy="boardId"&equalTo="${pins}"`)
     .then((response) => {
       const boardPins = response.data;
 
